@@ -34,13 +34,16 @@ export default defineConfig((mode) => {
       // },
       proxy: {
         "/img-tx": {
-          //target: "https://tjxt-dev.itheima.net",
-          target: "http://8.149.138.1:10010",
+          target: "https://s21.ax1x.com/",
           changeOrigin: true,
-          // rewrite: (path) => {
-          //   return path.replace(/^\/img-tx/, '')
-          // }
+          rewrite: (path) => {
+            return path.replace(/^\/img-tx/, '')
+          }
         },
+        '/2024':{
+          target: 'https://s21.ax1x.com/',
+          changeOrigin: true,
+        }
       },
     },
   };
