@@ -55,7 +55,7 @@ const props = defineProps({
 // 定义变量
 let imageUrl = ref("") //上传的图片路径
 const emit = defineEmits() //子组件获取父组件事件传值
-let actions = proxy[env].host + '/ms/files'
+let actions = 'http://8.149.138.1:10010' + '/ms/files'
 let uploadHeaders = { "authorization": sessionStorage.getItem(TOKEN_NAME) }//上传图片时需要添加token
 // ------定义方法------
 // 获取上传的图片路径
