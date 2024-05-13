@@ -93,7 +93,7 @@ const submitForm = (formEl) => {
           if (res.code == 200) {
             // 用户token写入 pinia
             store.setToken(res.data)
-            router.push("/main/index")
+            router.push("/curriculum/index")
             ElMessage({
               message: '登录成功!',
               type: "success",

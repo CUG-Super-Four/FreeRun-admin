@@ -28,7 +28,7 @@
         </div>
         <div class="fx" v-show="route.meta.title == '首页'">
           <span class="textDefault1" @click="() => $router.push('/')">
-            工作台
+            工作台1
           </span>
         </div>
       </div>

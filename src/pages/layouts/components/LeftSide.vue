@@ -1,7 +1,8 @@
 <!-- 架构页面 - 左侧导航 -->
 <template>
   <div class="LeftSider fx-fd-col">
-    <div  @click="() => $router.push('/')" class="logo cursor fx-ct"><img src="@/assets/newlogo.png" alt="" srcset="" /></div>
+    <div  @click="() => $router.push('/curriculum/index')" class="logo cursor fx-ct" >
+      <img src="@/assets/newlogo.png" alt="" srcset="" /></div>
     <div class="nav">
       <el-menu
         :default-active="activeIndex"
@@ -12,12 +13,16 @@
         @close="handleClose"
         @select="handleSelect"
       > 
+      
+      <!-- 删除工作台
         <div class="first-menu">
           <el-menu-item index="99" :key="99" @click="goPath(`/`)">
             <i class="iconfont" v-html="basePath[0].meta.icon"></i>
             <span>工作台</span>
           </el-menu-item>
         </div> 
+         -->
+
         <el-sub-menu v-for="(item, index) in basePath"  :key="index"  :index="index.toString()" >
           <template #title>
             <i class="iconfont" v-html="item.meta.icon"></i>
@@ -142,7 +147,7 @@ watchEffect(()=>{
   z-index: 999;
   width: 226px;
   height: 100vh;
-  background-image: linear-gradient(130deg, #FAF8F4 0%, #F4EEE6 53%);
+  background-image: linear-gradient(130deg, #ffffff 0%, #ffffff 53%);
   &::before, &::after{
     position: absolute;
     content: '';
@@ -154,11 +159,7 @@ watchEffect(()=>{
     width: 183px;
     height: 168px;
   }
-   &::after{
-    // left: auto;
-    // top: -140px;
-    // right: -160px;
-  }
+
   .decorate{
     top: 50vh;
     position: absolute;
@@ -166,7 +167,7 @@ watchEffect(()=>{
     width: 63px;
     height: 195px;
     opacity: 0.29;
-    background: #FF6B3D;
+    background: #ffffff;
     border-radius: 97px;
     filter: blur(50px);
   }
@@ -213,9 +214,6 @@ watchEffect(()=>{
           width: 16px;
           height: 16px;
         }
-      }
-      .navListTit{
-        // padding-left: 20px;
       }
     }
   }
