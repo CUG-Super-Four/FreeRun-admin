@@ -5,6 +5,7 @@
         <!-- 标题 -->
         <div class="tit">
           <span>个人信息</span>
+
           <!-- <el-tooltip
           class="tooltipitem"
           effect="light"
@@ -15,6 +16,7 @@
         >
           <span class="tooltipIcon"></span>
         </el-tooltip> -->
+
           <span class="tooltipIcon">
             <span class="hover"
               >用户名称、手机号、角色请联系管理员进行修改</span
@@ -256,7 +258,7 @@ const getStaffsDetail = async () => {
 }
 // 返回
 const handleGetback = () => {
-  router.push({ path: "/main" })
+  router.push({ path: "/curriculum/index" })
 };
 </script>
 <style lang="scss" scoped>

@@ -7,7 +7,7 @@
     <div class="fx-1 fx-al-ct">
       <div class="login">
         <div class="title">
-          <img src="@/assets/logo.png" alt="" width="300" height="200" srcset="">
+          <img src="@/assets/logo.png" alt="" width="198" height="60" srcset="">
         </div>
         <LoginPass v-if="act == 'pass'"></LoginPass>
       </div>
