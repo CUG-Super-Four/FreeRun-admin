@@ -34,15 +34,11 @@ export default defineConfig((mode) => {
       // },
       proxy: {
         "/img-tx": {
-          target: "https://s21.ax1x.com/",
+          target: "https://wisehub-1317268999.cos.ap-shanghai.myqcloud.com/",
           changeOrigin: true,
           rewrite: (path) => {
             return path.replace(/^\/img-tx/, '')
           }
-        },
-        '/2024':{
-          target: 'https://s21.ax1x.com/',
-          changeOrigin: true,
         }
       },
     },

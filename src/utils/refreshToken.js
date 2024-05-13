@@ -2,7 +2,7 @@ import axios from 'axios';
 import proxy from "../config/proxy";
 import {USER_KEY, TOKEN_NAME} from "../config/global";
 const env = import.meta.env.MODE || 'development';
-const host = env === 'mock' ? 'https://mock.boxuegu.com/mock/3359' : proxy[env].host;
+const host = env === 'mock' ? 'http://8.149.138.1:10010' : proxy[env].host;
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 let isRefresh = false;
