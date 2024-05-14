@@ -1,4 +1,4 @@
-<!--视频预览-->
+ <!-- 视频预览 -->
 <template>
   <div class="preview" style="width: 60%">
     <el-dialog v-model="dialogFormVisible" :title="title">
@@ -9,13 +9,13 @@
     </el-dialog>
   </div>
 </template>
+
 <script setup>
-import {
-  ref,
-} from "vue";
+import { ref, watch, onMounted, onBeforeUnmount } from "vue";
 import { ElMessage } from "element-plus";
-// 接口api
 import { getMediasSignature } from "@/api/media";
+import TCPlayer from 'tcplayer.js';
+import 'tcplayer.js/dist/tcplayer.min.css';
 // 获取父组件值、方法
 const props = defineProps({
   // 弹层隐藏显示
@@ -62,6 +62,7 @@ const initPlay = (fileID, psign) => {
     width: 100 + "%",
     preload: "auto",
     hlsConfig: {},
+    licenseUrl:"https://license.vod2.myqcloud.com/license/v2/1313707997_1/v_cube.license"
   });
   player.value.on('timeupdate', function() {
   });
@@ -78,12 +79,15 @@ const initPlay = (fileID, psign) => {
 };
 // 通过媒资id获取视频的fileId
 const getMediasSignatureData = async (mediaId) => {
+  console.log("media:",mediaId);
   await getMediasSignature({ mediaId })
     .then((res) => {
       if (res.code == 200) {
+        player.value=null;
         if (player.value == null) {
           fileId.value = res.data.fileId;
           signature.value = res.data.signature;
+          console.log("fileid:",fileId,"sign:",signature);
           initPlay(res.data.fileId, res.data.signature);
         }
       } else {
@@ -107,4 +111,5 @@ defineExpose({
   getId,
 });
 </script>
+
 
