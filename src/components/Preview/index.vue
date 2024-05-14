@@ -62,7 +62,7 @@ const initPlay = (fileID, psign) => {
     width: 100 + "%",
     preload: "auto",
     hlsConfig: {},
-    licenseUrl:"https://license.vod2.myqcloud.com/license/v2/1313707997_1/v_cube.license"
+    licenseUrl:"https://license.vod2.myqcloud.com/license/v2/1317268999_1/v_cube.license"
   });
   player.value.on('timeupdate', function() {
   });
