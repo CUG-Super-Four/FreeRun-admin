@@ -164,17 +164,17 @@
     >
       <div class="tearch">
         <div class="head">
-          <img src="../../../../assets/img_touxiang_small@2x.png" />
+          <img src="../../../../assets/ljricon.jpg" />
           <div class="text">
-            <p>武大庆</p>
-            <p>大厂高级前端开发工程师</p>
+            <p>刘金锐</p>
+            <p>中国地质大学</p>
           </div>
         </div>
         <div class="info">
-          多年互联网产品运营策划经验，掌握产品各环节运营方法。曾参加两家初创公司，擅长产品的冷启动，从0到1做用户精细化运营。曾以用户为中心，满足对产品的需求，使产品在三个月内用户增长23万。
+          多年无畏契约赋能高手，武汉所有英雄第一，代练陪玩一把三百。（港服黑铁）
         </div>
         <span class="tooltipIcon">
-          <span class="hover">用户端将自动展示教师信息，无需手动设置</span>
+          <span class="hover"></span>
         </span>
       </div>
     </el-form-item>
