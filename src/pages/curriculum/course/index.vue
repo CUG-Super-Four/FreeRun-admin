@@ -7,35 +7,35 @@
           <li>
             <span class="img"></span>
             <div class="text">
-              <p>81</p>
+              <p>21</p>
               <p>课程总数量（个）</p>
             </div>
           </li>
           <li>
             <span class="img"></span>
             <div class="text">
-              <p>27</p>
+              <p>13</p>
               <p>上架课程（个）</p>
             </div>
           </li>
           <li>
             <span class="img"></span>
             <div class="text">
-              <p>11</p>
+              <p>4</p>
               <p>下架课程（个）</p>
             </div>
           </li>
           <li>
             <span class="img"></span>
             <div class="text">
-              <p>12</p>
+              <p>4</p>
               <p>待上架课程（个）</p>
             </div>
           </li>
           <li>
             <span class="img"></span>
             <div class="text">
-              <p>31</p>
+              <p>0</p>
               <p>完结课程（个）</p>
             </div>
           </li>

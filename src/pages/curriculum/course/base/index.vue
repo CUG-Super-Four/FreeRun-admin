@@ -171,7 +171,7 @@
           </div>
         </div>
         <div class="info">
-          多年无畏契约赋能高手，武汉所有英雄第一，代练陪玩一把三百。（港服黑铁）
+          多年无畏契约赋能高手，武汉所有英雄第一，代练陪玩一把三百。（港服赋能第三）
         </div>
         <span class="tooltipIcon">
           <span class="hover"></span>
